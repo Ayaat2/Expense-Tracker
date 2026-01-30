@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Serif 4", serif;
+}
+body{
+    background-color:#e0e0e0 ;
+}
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+    padding:20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:white ;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgb(5, 87, 87);
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 15px;
+}
+label{
+    font-weight: bold;
+}
+input{
+    margin-bottom: 5px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border:none ;
+    background-color:#f4f6f8;
+}
+input[type="date"]{
+    cursor: pointer;
+}
+#submit-btn{   
+    background-color:rgb(5, 87, 87);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 40%;
+    align-self: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+h2{
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+    /* I use the collapse To make the table look clean, without spaces between the borders */
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+thead{
+    background-color: #f4f6f8;
+}
+th, td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th{
+    font-weight: 600;
+    color: #333;
+}
+tbody td:hover {
+  background-color: #f9f9f9;
+}
+/* Delete button */
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+.total-expense {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ /* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    form {
+        gap: 5px;
+    }
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+    #submit-btn {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+    }
+    th, td {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+}
